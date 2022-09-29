@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="auto.Registration">
+        <methods>
+          <include name="password_morethan_10alphanumeric"/>
+          <include name="firstname_lessthan_3char"/>
+          <include name="start"/>
+          <include name="lastname_morethan_20char"/>
+          <include name="mobilenumber_lessthan_3numbers"/>
+        </methods>
+      </class> <!-- auto.Registration -->
+      <class name="auto.Mobiles">
+        <methods>
+          <include name="searchbox_morethan_20char"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- auto.Mobiles -->
+      <class name="auto.Login">
+        <methods>
+          <include name="password_morethan_10char_"/>
+          <include name="start"/>
+          <include name="username_specialcharacter"/>
+        </methods>
+      </class> <!-- auto.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
